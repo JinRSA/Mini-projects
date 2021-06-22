@@ -42,7 +42,7 @@ namespace Fractal_Sierpinski
 
 		static void Main(string[] args)
 		{
-			Console.WriteLine("\nPress a key to display; press the 'x' key to quit.");
+			Console.WriteLine("\nPress the 'Esc' key to quit.");
 			//int[] Tx = { 852 * 65535 / 1366, 983 * 65535 / 1366, 1109 * 65535 / 1366 };
 			//int[] Ty = { 550 * 65535 / 768, 294 * 65535 / 768, 550 * 65535 / 768 };
 			int[] Tx = { 559 * 65535 / 1366, 931 * 65535 / 1366, 1302 * 65535 / 1366 }; // Bbb.
@@ -66,7 +66,7 @@ namespace Fractal_Sierpinski
 						//Console.WriteLine((Keys)i);
 					}
 				}
-				System.Threading.Thread.Sleep(50);
+				System.Threading.Thread.Sleep(5);
 				var dot = random.Next(3);
 				x = (x + Tx[dot]) / 2;
 				y = (y + Ty[dot]) / 2;
